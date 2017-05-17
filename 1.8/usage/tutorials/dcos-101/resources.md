@@ -51,7 +51,7 @@ Resource management and resource isolation between tasks are core challenges for
       `dcos marathon app list`.
   * Set instance count for app2 directly. This is useful is you want to scale app a single app or if the factor-based scaling is not applicable:
     * `dcos marathon app update /dcos-101/app2 instances=3` Note that these are applied incrementally to an existing app definition.
-    * Check that app2 has scaled `dcos marathon app update /dcos-101/app2 instances=1`.
+    * Check that app2 has scaled `dcos marathon app list`.
     * Rescale app2 to 1 instance `dcos marathon app update /dcos-101/app2 instances=1`.
     * Check that app2 has scaled `dcos marathon app list`.
 
